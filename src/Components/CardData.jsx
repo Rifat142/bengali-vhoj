@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "./card/Card";
 import { NavLink } from "react-router-dom";
-import AllProducts from "../pages/AllProducts";
+
 
 
 
@@ -30,11 +30,7 @@ const CardData = () => {
           
         </div>
        <NavLink to={'/all-products'}><div className="flex justify-center"> <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-amber-400 text-white ">Show all </button></div>
-       <div>
-       {
-                foods.map(food=><AllProducts food={food}></AllProducts>)
-            }
-       </div>
+      
        
        </NavLink>
        </div>

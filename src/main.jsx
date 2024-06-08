@@ -14,7 +14,7 @@ import AuthProvider from "./Authprovider/Authprovider";
 import PrivateRoutes from "./Roots/PrivateRoutes";
 import ErrorPage from "./pages/ErrorPage";
 import FoodDetails from "./pages/FoodDetails";
-import AllProducts from "./pages/AllProducts";
+import AllProducts from "./pages/All-products/AllProducts";
 
 
 const router = createBrowserRouter([
@@ -50,8 +50,9 @@ const router = createBrowserRouter([
       },
       {
         path:'/all-products',
-        element: <AllProducts></AllProducts>
-      }
+        element: <AllProducts></AllProducts>,
+        loader:()=>fetch(`http://localhost:5000/foods`)
+      },
     ],
   },
 ]);

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Authprovider/Authprovider";
-
+import logo from '../assets/restaurent.svg'
 const Navbar = () => {
 
 const {user,logOut , setLoading} =useContext(AuthContext);
@@ -36,22 +36,17 @@ const handleSignOut = () => {
         Login
       </NavLink>
       <NavLink
-        to="/register"
+        to="/all-products"
         className={({ isActive }) => (isActive ? "text-blue-700" : "")}
       >
-        Register
+        All Products
       </NavLink>
-      <NavLink
-        to="/about-us"
-        className={({ isActive }) => (isActive ? "text-blue-700" : "")}
-      >
-        About Us
-      </NavLink>
+     
     </div>
   );
   return (
     <div>
-      <div className="navbar  ">
+      <div className="navbar backdrop-blur-sm ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -77,7 +72,10 @@ const handleSignOut = () => {
               {navbarTittles}
             </ul>
           </div>
+          <div className="flex">
           <a className="btn btn-ghost sm:text-lg lg:text-2xl text-white">Bengali Vhoj</a>
+          <img className="w-12" src={logo} alt="" />
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navbarTittles}</ul>
@@ -100,7 +98,7 @@ const handleSignOut = () => {
               onClick={handleSignOut}
               className="ml-2 btn btn-outline btn-warning"
             >
-              Sign-out
+              log-out
             </button>
           ) : (
             <Link to="/login">

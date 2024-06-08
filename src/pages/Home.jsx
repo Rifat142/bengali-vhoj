@@ -1,18 +1,17 @@
 import { useEffect } from "react";
 
 import CardData from "../Components/CardData";
-import ClintComment from "../Components/ClientComment";
+
 import Footer from "../Components/Footer";
 
 import Navbar from "../Components/Navbar";
-import Welcome from "../Components/Welcome";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Slider from "../Components/Slider";
-import bg from "../assets/food bg.jpg"
+
 import bg2 from "../assets/food bg 2.jpg"
-import bg3 from "../assets/bg3.jpg"
-import bg4 from "../assets/bg4.jpg"
+
 
 const Home = () => {
   useEffect(() => {
@@ -50,11 +49,11 @@ const Home = () => {
         {/* <Welcome></Welcome> */}
       </div>
 
-      <div data-aos="fade-right">
+      <div data-aos="fade-up">
         <CardData></CardData>
       </div>
-      <div data-aos="fade-up">
-        <ClintComment></ClintComment>
+      <div data-aos="fade-right">
+        
       </div>
 
       <div data-aos="zoom-in">

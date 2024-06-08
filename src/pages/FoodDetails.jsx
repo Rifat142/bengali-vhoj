@@ -2,7 +2,7 @@ import React from "react";
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import bg from "../assets/food bg.jpg"
+import bg from "../assets/bg4.jpg"
 import Swal from 'sweetalert2'
 
 
@@ -47,7 +47,7 @@ const FoodDetails = () => {
             
           
           </h2>
-          <div className="border text-2xl space-y-2 text-black font-nunito font-bold ">
+          <div className=" text-2xl space-y-2 text-white font-nunito font-bold ">
           <div>{details}</div>
           <div> Prica: ${price}</div>
           <div>Category:{category}</div>
