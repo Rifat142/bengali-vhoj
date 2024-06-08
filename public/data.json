@@ -1,0 +1,51 @@
+ [
+    {
+      "id": 1,
+      "name": "Birthday Party",
+      "image": "https://i.ibb.co/P6DSw0N/birthday-party.jpg",
+      "details": "Celebrate your special day with friends and family. Enjoy delicious food, fun games, and unforgettable memories!",
+      "price": "$200",
+      "bigDescription": "A birthday party is a joyful celebration of another year of life. It's a time to gather your closest friends and family to mark the occasion with laughter, good food, and shared memories. Whether you're throwing a grand extravaganza or a cozy gathering, make sure to personalize the event to reflect the birthday person's interests and personality. From themed decorations to a delectable cake, every detail contributes to creating a memorable experience for everyone involved."
+    },
+    {
+      "id": 2,
+      "name": "Wedding Party",
+      "image": "https://i.ibb.co/bsnNLhd/wedding-party.jpg",
+      "details": "Join us as we say 'I do' and embark on our journey together. Dance the night away and toast to love and happiness!",
+      "price": "$500",
+      "bigDescription": "A wedding party is a celebration of love and commitment, where two souls come together to embark on a lifelong journey. It's a day filled with romance, joy, and the promise of a beautiful future together. From the breathtaking ceremony to the festive reception, every moment is infused with love and happiness. Guests gather to witness the exchange of vows, share in the couple's joy, and dance the night away in celebration. It's a magical day that marks the beginning of a new chapter in the couple's love story."
+    },
+    {
+      "id": 3,
+      "name": "Anniversary Celebration",
+      "image": "https://i.ibb.co/xGhb8zs/anniversery.jpg",
+      "details": "Mark another year of love and commitment. Renew your vows and reminisce about cherished moments!",
+      "price": "$300",
+      "bigDescription": "An anniversary celebration is a time to honor the enduring love and commitment between two people. It's a milestone worth celebrating, whether it's the first year or a golden anniversary. Couples gather to renew their vows, reflect on their journey together, and express gratitude for the love they share. From intimate dinners to lavish parties, every anniversary celebration is a testament to the strength of the bond between two hearts. It's a time to create new memories and reaffirm the vows spoken on the day they said 'I do.'"
+    },
+    {
+      "id": 4,
+      "name": "Engagement Party",
+      "image": "https://i.ibb.co/ZYSn9J3/engagement-party.jpg",
+      "details": "Announce your engagement surrounded by loved ones. Share your excitement and future plans over champagne!",
+      "price": "$150",
+      "bigDescription": "An engagement party is a joyous celebration of love and commitment as two people embark on the journey towards marriage. It's a time to share the exciting news with family and friends, who gather to offer congratulations and well-wishes. From elegant soirées to casual gatherings, engagement parties come in all shapes and sizes. Guests toast to the happy couple's future and eagerly await the wedding festivities to come. It's a special occasion filled with love, laughter, and anticipation for the journey ahead."
+    },
+    {
+      "id": 5,
+      "name": "Retirement Party",
+      "image": "https://i.ibb.co/whhn2vt/retierment.jpg",
+      "details": "Bid farewell to a colleague and friend. Reflect on a career well-spent and toast to new beginnings!",
+      "price": "$100",
+      "bigDescription": "A retirement party is a bittersweet celebration of a career well-spent and the beginning of a new chapter in life. It's a time to honor the retiree's accomplishments, reminisce about shared experiences, and wish them well on their future endeavors. From heartfelt speeches to humorous anecdotes, guests gather to express gratitude and appreciation for the retiree's contributions. Whether it's a formal affair or a casual get-together, retirement parties are a time to celebrate past achievements and look forward to the adventures that lie ahead."
+    },
+    {
+      "id": 6,
+      "name": "Baby Shower",
+      "image": "https://i.ibb.co/g3FzYVT/baby-shower.jpg",
+      "details": "Welcome the arrival of the newest member of the family! Shower the parents-to-be with love, gifts, and well wishes.",
+      "price": "$80",
+      "bigDescription": "A baby shower is a joyous celebration of new life and the impending arrival of a precious bundle of joy. It's a time for family and friends to come together to shower the parents-to-be with love, support, and gifts for the baby. From adorable decorations to fun games and activities, every aspect of the baby shower is designed to celebrate the growing family. Guests eagerly await the opportunity to meet the newest member of the family and offer their congratulations to the parents-to-be. It's a heartwarming occasion filled with laughter, excitement, and anticipation for the journey ahead."
+    }
+  ]
+  

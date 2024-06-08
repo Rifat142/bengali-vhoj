@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Shorshe Ilish",
+    "category": "Fish",
+    "price": 550,
+    "image": "https://i.ibb.co/c3zs9ZS/Pohela-Boishakh-2021-The-Spice-Odyssey-50.jpg",
+    "details": "A traditional Bengali dish made with Hilsa fish cooked in mustard sauce.",
+    "made_by": "Chef Suman",
+    "food_origin": "Bengal",
+    "short_details": "Ingredients: Hilsa fish, mustard seeds, green chilies, turmeric, salt, mustard oil. Recipe: Grind mustard seeds with green chilies to make a paste. Marinate Hilsa fish with turmeric and salt. Cook fish in mustard paste with mustard oil until tender.",
+    "count": 0,
+    "quantity": 7
+  },
+  {
+    "name": "Chingri Malai Curry",
+    "category": "Seafood",
+    "price": 650,
+    "image": "https://i.ibb.co/f2N0NFZ/download.jpg",
+    "details": "A rich and creamy prawn curry cooked with coconut milk.",
+    "made_by": "Chef Ananya",
+    "food_origin": "Bengal",
+    "short_details": "Ingredients: Prawns, coconut milk, onions, garlic, ginger, turmeric, garam masala. Recipe: Sauté onions, garlic, and ginger in oil. Add prawns and cook with turmeric. Pour in coconut milk and simmer until prawns are cooked.",
+    "count": 0,
+    "quantity": 5
+  },
+  {
+    "name": "Aloo Posto",
+    "category": "Vegetarian",
+    "price": 200,
+    "image": "https://i.ibb.co/kJFzCWF/images.jpg",
+    "details": "A simple yet flavorful dish made with potatoes and poppy seeds.",
+    "made_by": "Chef Rina",
+    "food_origin": "Bengal",
+    "short_details": "Ingredients: Potatoes, poppy seeds, green chilies, turmeric, mustard oil. Recipe: Boil potatoes and cut into cubes. Grind poppy seeds with green chilies. Cook potatoes in mustard oil with turmeric, then add poppy seed paste and simmer.",
+    "count": 0,
+    "quantity": 10
+  },
+  {
+    "name": "Kosha Mangsho",
+    "category": "Meat",
+    "price": 450,
+    "image": "https://i.ibb.co/x13jcck/download.jpg",
+    "details": "A slow-cooked mutton curry with a thick and spicy gravy.",
+    "made_by": "Chef Abhijit",
+    "food_origin": "Bengal",
+    "short_details": "Ingredients: Mutton, onions, garlic, ginger, yogurt, garam masala, red chili powder. Recipe: Marinate mutton with yogurt and spices. Sauté onions, garlic, and ginger, then add marinated mutton and cook until tender.",
+    "count": 0,
+    "quantity": 4
+  },
+  {
+    "name": "Mishti Doi",
+    "category": "Dessert",
+    "price": 150,
+    "image": "https://i.ibb.co/sJSC55m/download.jpg",
+    "details": "A sweetened yogurt dessert, a staple in Bengali cuisine.",
+    "made_by": "Chef Sunita",
+    "food_origin": "Bengal",
+    "short_details": "Ingredients: Milk, sugar, yogurt culture. Recipe: Boil milk and reduce to half. Add caramelized sugar and let it cool. Mix with yogurt culture and let it set in a warm place.",
+    "count": 0,
+    "quantity": 8
+  },
+  {
+    "name": "Macher Paturi",
+    "category": "Fish",
+    "price": 500,
+    "image": "https://i.ibb.co/Px09s4m/download.jpg",
+    "details": "Fish marinated in mustard paste and steamed in banana leaves.",
+    "made_by": "Chef Rajesh",
+    "food_origin": "Bengal",
+    "short_details": "Ingredients: Fish fillets, mustard seeds, green chilies, banana leaves, mustard oil. Recipe: Grind mustard seeds with green chilies to make a paste. Marinate fish fillets with mustard paste. Wrap in banana leaves and steam until cooked.",
+    "count": 0,
+    "quantity": 6
+  },
+  {
+    "name": "Luchi Alur Dom",
+    "category": "Vegetarian",
+    "price": 250,
+    "image": "https://i.ibb.co/R0tLpSd/download.jpg",
+    "details": "A classic Bengali breakfast dish of deep-fried bread served with spicy potato curry.",
+    "made_by": "Chef Radhika",
+    "food_origin": "Bengal",
+    "short_details": "Ingredients: Flour, potatoes, tomatoes, ginger, garlic, spices. Recipe: Prepare dough for luchi and deep fry. Cook potatoes with tomatoes, ginger, garlic, and spices for alur dom.",
+    "count": 0,
+    "quantity": 3
+  },
+  {
+    "name": "Rasgulla",
+    "category": "Dessert",
+    "price": 180,
+    "image": "https://i.ibb.co/myXsMJH/download.jpg",
+    "details": "Soft and spongy cheese balls soaked in sugar syrup.",
+    "made_by": "Chef Soma",
+    "food_origin": "Bengal",
+    "short_details": "Ingredients: Milk, lemon juice, sugar, water. Recipe: Boil milk and curdle it with lemon juice to make chenna. Knead chenna and form balls. Cook in boiling sugar syrup until spongy.",
+    "count": 0,
+    "quantity": 9
+  }
+]
