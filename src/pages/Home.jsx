@@ -11,6 +11,8 @@ import "aos/dist/aos.css";
 import Slider from "../Components/Slider";
 
 import bg2 from "../assets/food bg 2.jpg"
+import Welcome from "../Components/Welcome";
+import Chief from "../Components/Chief";
 
 
 const Home = () => {
@@ -46,14 +48,14 @@ const Home = () => {
       </div>
 
       <div data-aos="zoom-in-down">
-        {/* <Welcome></Welcome> */}
+        <Welcome></Welcome>
       </div>
 
       <div data-aos="fade-up">
         <CardData></CardData>
       </div>
       <div data-aos="fade-right">
-        
+        <Chief></Chief>
       </div>
 
       <div data-aos="zoom-in">

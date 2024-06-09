@@ -11,6 +11,7 @@ const CardData = () => {
     const [foods ,setFoods]= useState([]);
          useEffect(()=>{
           fetch(`http://localhost:5000/foods`)
+        //   fetch(`http://localhost:5000/foods`)
           .then(res=>res.json())
           .then(data=> setFoods(data))
     
@@ -20,8 +21,8 @@ const CardData = () => {
     return (
        <div className="">
         
-        <h1 className="font-bold text-7xl  text-white font-nunito text-center mb-5 p-4">
-        Here we offer
+        <h1 className="font-bold text-5xl  text-white font-nunito text-center mb-5 p-4">
+        Introducing Six Exquisite Dishes from Bengali Vhoj – A Culinary Journey Awaits!
             </h1>
         <div className="grid  sm:grid-cols-1   md:grid-cols-2  lg:grid-cols-3 gap-3  md:pl-2 lg:pl-8   ">
             {

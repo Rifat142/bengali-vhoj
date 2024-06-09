@@ -48,7 +48,7 @@ const FoodDetails = () => {
           
           </h2>
           <div className=" text-2xl space-y-2 text-white font-nunito font-bold ">
-          <div>{details}</div>
+          <div className="text-3xl">Details:{details}</div>
           <div> Prica: ${price}</div>
           <div>Category:{category}</div>
           <div>made-by: {made_by}</div>
