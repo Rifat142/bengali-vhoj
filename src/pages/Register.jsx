@@ -4,7 +4,7 @@ import Navbar from "../Components/Navbar";
 import { AuthContext } from "../Authprovider/Authprovider";
 import { updateProfile } from "firebase/auth";
 import Swal from "sweetalert2";
-
+import bg2 from '../assets/food bg 2.jpg'
 
 const Register = () => {
   const { createUser, user } = useContext(AuthContext);
@@ -82,18 +82,24 @@ const Register = () => {
   };
 
   return (
-    <div>
+    <div style={{
+      backgroundImage:`url(${bg2})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+
+    }}>
       <Navbar></Navbar>
-      <div className="hero min-h-screen bg-white ">
+      <div className="hero min-h-screen ">
         <div className="hero-content grid">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-black">Register Here!</h1>
+            <h1 className="text-5xl font-bold text-white">Register Here!</h1>
           </div>
-          <div className="card  sm:w-full lg:w-96  max-w-sm shadow-2xl bg-blue-300">
+          <div className="card  sm:w-full lg:w-96  max-w-sm shadow-2xl backdrop-blur-lg">
             <form onSubmit={hadleRegister} className="card-body ">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-black">Name</span>
+                  <span className="label-text text-white">Name</span>
                 </label>
                 <input
                   type="text"
@@ -105,7 +111,7 @@ const Register = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-black">Photo Url</span>
+                  <span className="label-text text-white">Photo Url</span>
                 </label>
                 <input
                   type="text"
@@ -117,7 +123,7 @@ const Register = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-black">Email</span>
+                  <span className="label-text text-white">Email</span>
                 </label>
                 <input
                   type="email"
@@ -129,7 +135,7 @@ const Register = () => {
               </div>
               <div className="form-control ">
                 <label className="label">
-                  <span className="label-text text-black">Password</span>
+                  <span className="label-text text-white">Password</span>
                 </label>
                 <input
                   type="password"
@@ -141,14 +147,14 @@ const Register = () => {
                 <label className="label">
                   <a
                     href="#"
-                    className="label-text-alt link link-hover text-black"
+                    className="label-text-alt link link-hover text-white"
                   >
                     Forgot password?
                   </a>
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary text-black">Register</button>{" "}
+                <button className="btn btn-warning text-black">Register</button>{" "}
               </div>
             </form>
           </div>
