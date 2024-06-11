@@ -29,7 +29,7 @@ const OrderPage = () => {
         <div>
             <Navbar></Navbar>
             <div>
-            <div className=" px-40 py-16 bg-gradient-to-r from-gray-900 to-gray-700 glass ">
+            <div className=" px-40 py-16  glass ">
         <h1 className="mx-auto text-5xl font-bold text-center ">
           Purchase this item!
         </h1>
@@ -42,7 +42,7 @@ const OrderPage = () => {
                 type="text"
                 placeholder="Type here"
                 name="name"
-                className="input input-bordered input-success w-full max-w-xs"
+                className="input input-bordered  w-full max-w-xs"
               />
             </div>
             <div>
@@ -51,7 +51,7 @@ const OrderPage = () => {
                 type="text"
                 placeholder="Type here"
                 name="quantity"
-                className="input input-bordered input-success w-full max-w-xs"
+                className="input input-bordered  w-full max-w-xs"
               />
             </div>
             <div>
@@ -62,7 +62,7 @@ const OrderPage = () => {
                 type="text"
                 placeholder="Type here"
                 name="date"
-                className="input input-bordered input-success w-full max-w-xs"
+                className="input input-bordered  w-full max-w-xs"
               />
             </div>
             <div>
@@ -71,25 +71,25 @@ const OrderPage = () => {
                 type="text"
                 placeholder="Type here"
                 name="price"
-                className="input input-bordered input-success w-full max-w-xs"
+                className="input input-bordered  w-full max-w-xs"
               />
             </div>
             <div>
-              <span className="label-text">buyer_name Name</span>
+              <span className="label-text">buyer Name</span>
               <input
                 type="text"
                 placeholder="Type here"
                 name="buyer_name"
-                className="input input-bordered input-success w-full max-w-xs"
+                className="input input-bordered  w-full max-w-xs"
               />
             </div>
             <div>
-              <span className="label-text">Rating</span>
+              <span className="label-text">Buyer email</span>
               <input
                 type="text"
                 placeholder="Type here"
                 name="email"
-                className="input input-bordered input-success w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
@@ -100,7 +100,7 @@ const OrderPage = () => {
               type="text"
               name="description"
               placeholder="Type here"
-              className="input input-bordered input-accent w-full max-w-full"
+              className="input input-bordered w-full max-w-full"
             />
           </div>
           <br />
