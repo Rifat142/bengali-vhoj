@@ -15,6 +15,7 @@ import PrivateRoutes from "./Roots/PrivateRoutes";
 import ErrorPage from "./pages/ErrorPage";
 import FoodDetails from "./pages/FoodDetails";
 import AllProducts from "./pages/All-products/AllProducts";
+import OrderPage from "./pages/OrderPage";
 
 
 const router = createBrowserRouter([
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
         element: <AllProducts></AllProducts>,
         loader:()=>fetch(`http://localhost:5000/foods`)
         
+      },
+      {
+        path:'/order-page',
+        element:<OrderPage></OrderPage>
       },
     ],
   },

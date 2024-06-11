@@ -1,9 +1,9 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import bg from "../assets/bg4.jpg"
-import Swal from 'sweetalert2'
+// import Swal from 'sweetalert2'
 
 
 
@@ -14,13 +14,13 @@ const FoodDetails = () => {
   console.log(food);
 
 
-  const handleClick = ()=>{
-    Swal.fire({
-      title: "Booking completed",
-      text: "Thank you",
-      icon: "success"
-    });
-  }
+  // const handleClick = ()=>{
+  //   Swal.fire({
+  //     title: "Booking completed",
+  //     text: "Thank you",
+  //     icon: "success"
+  //   });
+  // }
 
   return (
     
@@ -56,11 +56,11 @@ const FoodDetails = () => {
           <div>Recipe : {short_details}</div>
           <div>quantity:{quantity}</div>
           </div>
-          <div className="card-actions justify-end">
+          <Link to='/order-page'><div className="card-actions justify-end">
             <button 
-            onClick={handleClick}
+            // onClick={handleClick}
             className="btn btn-warning">Place Order</button>
-          </div>
+          </div></Link>
         </div>
       </div>
       <Footer></Footer>

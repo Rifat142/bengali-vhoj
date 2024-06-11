@@ -10,7 +10,12 @@ import app from "../Firebase/Firebase.config";
 import bg2 from '../assets/food bg 2.jpg'
 
 const Login = () => {
-    const {user,setUser} = useState(null)
+    const {user,setUser} = useState(null);
+    const location = useLocation();
+    // console.log(location);
+    const navigate = useNavigate();
+
+    // const {user,setUser} = useContext(AuthContext);
     const auth = getAuth(app)
     const provider = new GoogleAuthProvider()
     const handleGoogleSignIn = ()=>{
@@ -18,12 +23,17 @@ const Login = () => {
       .then(result=>{
         handleAlert();
         const loggedInUser = result.user
+        // console.log('lloogged',loggedInUser);
+        navigate(location?.state ? location.state : "/");
         setUser(loggedInUser)
-        console.log(loggedInUser);
+        
+        console.log( 'location', location)
+        
+       
 
       })
       .catch( error=>{
-        console.log('error=' , error)
+        console.log('error' , error)
       }
         
       )
@@ -47,9 +57,9 @@ const Login = () => {
     });
   };
   const { signIn  } = useContext(AuthContext);
-  const location = useLocation();
-  console.log("locationin the login page", location);
-  const navigate = useNavigate();
+ 
+  // console.log("locationin the login page", location);
+  // const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -63,7 +73,9 @@ const Login = () => {
     // console.log(form.get("password"));
     signIn(email, password)
       .then((result) => {
+          
         handleAlert();
+        
         navigate(location?.state ? location.state : "/");
         // console.log(result.user);
       })

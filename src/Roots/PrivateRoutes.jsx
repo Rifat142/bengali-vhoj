@@ -7,7 +7,7 @@ const PrivateRoutes = ({children}) => {
     const {user , loading} = useContext(AuthContext)
     const location = useLocation();
     
-    // console.log(  'user path' ,location)
+    console.log(  'user path' ,location , location.pathname)
     // console.log(user)
 
     if(loading){
@@ -20,6 +20,7 @@ const PrivateRoutes = ({children}) => {
 
     // console.log("User not authenticated, redirecting to login");
     return <Navigate state = {location.pathname} to='/login'></Navigate>
+    // return <Navigate to="/login" state={{ from: location }} />;
    
 };
 
