@@ -57,9 +57,9 @@ const FoodDetails = () => {
           <div>quantity:{quantity}</div>
           </div>
           <Link to='/order-page'><div className="card-actions justify-end">
-            <button 
+            <Link to= {`/order-page/${_id}`}><button 
             // onClick={handleClick}
-            className="btn btn-warning">Place Order</button>
+            className="btn btn-warning">Place Order</button></Link>
           </div></Link>
         </div>
       </div>

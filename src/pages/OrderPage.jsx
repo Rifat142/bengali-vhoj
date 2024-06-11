@@ -1,8 +1,19 @@
-import React from 'react';
+
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import { useLoaderData } from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from '../Authprovider/Authprovider';
 
 const OrderPage = () => {
+  const food = useLoaderData();
+  const {user} = useContext(AuthContext);
+  // console.log( 'user in order',user.displayName)
+
+
+  const { name, _id , image ,price, made_by , food_origin, short_details,quantity,category, details } = food;
+  // console.log( 'food',food);
+
 
     const handlePurchaseItem = (event) => {
         event.preventDefault();
@@ -18,8 +29,8 @@ const OrderPage = () => {
         const price = Items.get("price");
         const date = Items.get("date");
         
-        const updatedItem = { name, quantity, buyer_name, email, price, date, description };
-        console.log(updatedItem);
+        const addItem = { name, quantity, buyer_name, email, price, date, description };
+        console.log(addItem);
         // console.log(name , quantity, buyer_name,email,price,type,description )
       };
 
@@ -39,6 +50,7 @@ const OrderPage = () => {
             <div>
               <span className="label-text">Name</span>
               <input
+              defaultValue={name}
                 type="text"
                 placeholder="Type here"
                 name="name"
@@ -48,6 +60,7 @@ const OrderPage = () => {
             <div>
               <span className="label-text">Quantity</span>
               <input
+              defaultValue={quantity}
                 type="text"
                 placeholder="Type here"
                 name="quantity"
@@ -59,7 +72,8 @@ const OrderPage = () => {
                 Date
               </span>
               <input
-                type="text"
+              
+                type="date"
                 placeholder="Type here"
                 name="date"
                 className="input input-bordered  w-full max-w-xs"
@@ -68,6 +82,7 @@ const OrderPage = () => {
             <div>
               <span className="label-text">Price</span>
               <input
+              defaultValue={price}
                 type="text"
                 placeholder="Type here"
                 name="price"
@@ -77,34 +92,29 @@ const OrderPage = () => {
             <div>
               <span className="label-text">buyer Name</span>
               <input
+                defaultValue={user.displayName}
                 type="text"
                 placeholder="Type here"
                 name="buyer_name"
-                className="input input-bordered  w-full max-w-xs"
+                className="input input-bordered  w-full max-w-xs "readOnly
               />
             </div>
             <div>
               <span className="label-text">Buyer email</span>
               <input
+              
+              defaultValue={user.email}
                 type="text"
                 placeholder="Type here"
                 name="email"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs "readOnly
               />
             </div>
           </div>
           <br />
-          <div>
-            <span className="label-text">Short description</span>
-            <input
-              type="text"
-              name="description"
-              placeholder="Type here"
-              className="input input-bordered w-full max-w-full"
-            />
-          </div>
+         
           <br />
-          <button className="btn btn-block">Add item</button>
+          <button className="btn btn-block">Buy this </button>
         </form>
       </div>
             </div>
