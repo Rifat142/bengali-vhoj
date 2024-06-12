@@ -102,8 +102,8 @@ const handleSignOut = () => {
             
             >
               <li><Link to='/cart'>My cart</Link></li>
-              <li><a>Item 2</a></li>
-              <li><a>Item 3</a></li>
+              <li><Link to='/added-items'>My added products </Link></li>
+              <li><Link to='/add-item'>Add a Product</Link></li>
            </ul>  
           </div>
           </div>

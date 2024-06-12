@@ -1,22 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Navbar from '../../Components/Navbar';
 import Footer from '../../Components/Footer';
 import Table from './Table';
+import { AuthContext } from '../../Authprovider/Authprovider';
 
 const Cart = () => {
     const [carts , setCart] = useState([]);
-
+        const {user} = useContext(AuthContext);
+        // console.log( 'user enail', user.email)
     
     useEffect(()=>{
-     fetch(`http://localhost:5000/food-cart`)
+     fetch(`http://localhost:5000/food-cart?email=${user.email}`)
      .then(res=>res.json())
      .then(data=> setCart(data))
 
     } ,[])
     return (
-        <div>
+        <div className='bg-slate-900'>
             <Navbar></Navbar>
-            This is my cart 
+            <p className='text-center text-5xl mb-12 '>This is my cart </p>
             <div className="bg-slate-900  text-white">
             {
               carts.map(cart=> <Table cart={cart}

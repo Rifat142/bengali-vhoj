@@ -18,6 +18,8 @@ import AllProducts from "./pages/All-products/AllProducts";
 import OrderPage from "./pages/OrderPage";
 import Blog from "./pages/Blog";
 import Cart from "./pages/Mycart/Cart";
+import AddedItem from "./pages/AddedItem/AddedItem";
+import AddItem from "./pages/AddedItem/AddItem";
 
 
 const router = createBrowserRouter([
@@ -69,7 +71,15 @@ const router = createBrowserRouter([
       },
       {
         path : '/cart',
-        element:<Cart></Cart>
+        element:<PrivateRoutes><Cart></Cart></PrivateRoutes>,
+      },
+      {
+        path:'/added-items',
+        element:<PrivateRoutes><AddedItem></AddedItem></PrivateRoutes>
+      },
+      {
+        path:'/add-item',
+        element:<PrivateRoutes><AddItem></AddItem></PrivateRoutes>
       },
 
     ],
