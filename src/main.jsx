@@ -63,7 +63,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/order-page/:id',
-        element:<OrderPage></OrderPage>,
+        element:<PrivateRoutes><OrderPage></OrderPage></PrivateRoutes>,
         loader: ({params}) => fetch(`http://localhost:5000/foods/${params.id}`)
       },
     ],

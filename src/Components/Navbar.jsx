@@ -5,7 +5,8 @@ import logo from '../assets/restaurent.svg'
 const Navbar = () => {
 
 const {user,logOut , setLoading} =useContext(AuthContext);
-console.log(user);
+console.log( 'user in navbar ',user);
+// console.log('user photo ', user.photoURL)
 const handleSignOut = () => {
   setLoading(true);
   logOut()
@@ -91,10 +92,11 @@ const handleSignOut = () => {
           <div className=" sm:grid  lg:flex">
           <p className="  sm:m-auto  lg:mr-4 text-white">{user?user.displayName : 'my name'} </p>
           <div className="w-10 ">
+          
             <img
               className="rounded-full"
               alt="Tailwind CSS Navbar component"
-            src={user && user.photoUrl ? user.photoUrl :"https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"}
+            src={user && user.photoURL ? user.photoURL :"https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"}
             />
           </div>
           </div>
