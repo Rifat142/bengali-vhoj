@@ -16,6 +16,7 @@ import ErrorPage from "./pages/ErrorPage";
 import FoodDetails from "./pages/FoodDetails";
 import AllProducts from "./pages/All-products/AllProducts";
 import OrderPage from "./pages/OrderPage";
+import Blog from "./pages/Blog";
 
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/about-us",
         element: <PrivateRoutes><AboutUs></AboutUs></PrivateRoutes>,
+      },
+      {
+        path:'/blog',
+        element : <Blog></Blog>
       },
       {
         path: "/comment",
