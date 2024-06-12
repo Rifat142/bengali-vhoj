@@ -7,6 +7,7 @@ import Swal from "sweetalert2";
 
 const OrderPage = () => {
   const food = useLoaderData();
+  console.log( 'food',food);
   const { user } = useContext(AuthContext);
   // console.log( 'user in order',user.displayName)
 
@@ -66,7 +67,7 @@ const OrderPage = () => {
       return;
     }
 
-    const addItem = { name, quantity, buyer_name, email, price, date };
+    const addItem = { name, quantity, buyer_name, email, price, date ,image,made_by,details};
     console.log( 'additem', addItem);
     // console.log(name , quantity, buyer_name,email,price,type,description )
     

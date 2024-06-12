@@ -42,6 +42,11 @@ const Home = () => {
     >
       <div>
       <Navbar></Navbar>
+      <br />
+      <br />
+      <br />
+      
+      
       <div data-aos="fade-down">
         
         <Slider></Slider>

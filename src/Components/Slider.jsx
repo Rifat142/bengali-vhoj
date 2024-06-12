@@ -1,13 +1,13 @@
 const Slider = () => {
   return (
-    <div>
-      <div className="carousel w-full h-[600px]">
+    <div className="">
+      <div className="carousel w-full h-[600px] relative">
         <div id="slide1" className="carousel-item relative w-full  ">
           <img
             src="https://i.ibb.co/Px09s4m/download.jpg"
             className="w-full "
           />
-          <div className="absolute bg-gradient-to-r from-black to-black-200 h-full pt-12 p-6 ">
+          <div className="absolute bg-gradient-to-r from-black to-black-200 h-full pt-12 p-6  ">
             <p className="text-8xl mt-8 text-white">Macher Paturi </p>
             <div className=" w-2/3 gap- pt-6  ">
               <p className="text-white text-4xl font-nunito mb-6 ">
