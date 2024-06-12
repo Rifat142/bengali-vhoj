@@ -94,7 +94,7 @@ const handleSignOut = () => {
             <img
               className="rounded-full"
               alt="Tailwind CSS Navbar component"
-            src={user?user.photoUrl :"https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"}
+            src={user && user.photoUrl ? user.photoUrl :"https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"}
             />
           </div>
           </div>
