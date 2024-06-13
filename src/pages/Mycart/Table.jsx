@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 
 const Table = ({ cart, carts, setCart }) => {
   console.log("cart item data", cart);
-  const { details, date ,buyer_name, name, image, price, _id } = cart;
+  const { details, date ,buyer_name, name, image, price, _id,quantity } = cart;
 
   //  handle delete
   const handleDelete = (_id) => {
@@ -51,9 +51,11 @@ const Table = ({ cart, carts, setCart }) => {
                 <label></label>
               </th>
               <th>description</th>
+              <th>Quantity</th>
               <th>Added-time</th>
               <th>Your name</th>
               <th>Price</th>
+              
               <th></th>
               <th></th>
             </tr>
@@ -83,6 +85,13 @@ const Table = ({ cart, carts, setCart }) => {
                 {/* desvription */}
                 {details}
                 <br />
+                
+              </td>
+              <td className="  text-lg">
+                
+                {/* desvription */}
+                {quantity}
+               
                 
               </td>
               <td className=" w-1/4 text-lg">

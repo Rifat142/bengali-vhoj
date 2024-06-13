@@ -1,26 +1,37 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import bg from "../assets/bg4.jpg"
+import { AuthContext } from "../Authprovider/Authprovider";
+import Swal from "sweetalert2";
 // import Swal from 'sweetalert2'
 
 
 
 
 const FoodDetails = () => {
+  const {user} = useContext(AuthContext);
   const food = useLoaderData();
-  const { name, _id , image ,price, made_by , food_origin, short_details,quantity,category, details } = food;
-  console.log(food);
+  const { name, _id , image ,price, made_by , food_origin, short_details,quantity,category, details ,email} = food;
+  console.log( 'food-details',food);
+  console.log(email)
+  console.log(user.email)
 
 
-  // const handleClick = ()=>{
-  //   Swal.fire({
-  //     title: "Booking completed",
-  //     text: "Thank you",
-  //     icon: "success"
-  //   });
-  // }
+  const handleClick = (event)=>{
+
+    if(email === user.email){
+      event.preventDefault()
+      Swal.fire({
+        title: "You can't buy your own product",
+        text: "Thank you",
+        icon: "error"
+      });
+      
+    }
+    
+  }
 
   return (
     
@@ -32,7 +43,8 @@ const FoodDetails = () => {
         backgroundRepeat: 'no-repeat',
     }}>
         <Navbar></Navbar>
-      
+      <br /><br />
+      <br />
   
       <div className="card lg:card-side bg-transparent backdrop-blur-lg shadow-xl ">
         <figure>
@@ -56,11 +68,11 @@ const FoodDetails = () => {
           <div>Recipe : {short_details}</div>
           <div>quantity:{quantity}</div>
           </div>
-          <Link to='/order-page'><div className="card-actions justify-end">
+          <div className="card-actions justify-end">
             <Link to= {`/order-page/${_id}`}><button 
-            // onClick={handleClick}
+            onClick={handleClick}
             className="btn btn-warning">Place Order</button></Link>
-          </div></Link>
+          </div>
         </div>
       </div>
       <Footer></Footer>

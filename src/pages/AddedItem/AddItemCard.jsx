@@ -15,7 +15,8 @@ const AddItemCard = ({food}) => {
     
     <p className="flex-grow text-2xl font-bold" >${price}</p>
     <div className="card-actions justify-end">
-    <NavLink to = {`/food-details/${_id}`}><button className="btn btn-warning   text-white">Show more</button></NavLink>
+    <NavLink to = {`/update/${_id}`}><button className="btn btn-warning   text-white">Update</button></NavLink>
+    <NavLink to = {`/food-details/${_id}`}><button className="btn btn-warning   text-white">Details</button></NavLink>
     </div>
   </div>
 </div>
