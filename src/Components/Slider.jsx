@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Slider = () => {
   return (
     <div className="">
@@ -19,7 +21,7 @@ const Slider = () => {
                 and steam until cooked.
               </p>
               <br />
-              <button className="btn btn-warning">Order Now!</button>
+              <Link to={'/all-products'}><button className="btn btn-warning">Show All items</button></Link>
             </div>
           </div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
@@ -46,7 +48,7 @@ const Slider = () => {
               Prepare dough for luchi and deep fry. Cook potatoes with tomatoes, ginger, garlic, and spices for alur dom.
               </p>
               <br />
-              <button className="btn btn-warning">Order Now!</button>
+              <Link to={'/all-products'}><button className="btn btn-warning">Show All items</button></Link>
             </div>
           </div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
@@ -74,7 +76,7 @@ const Slider = () => {
               Marinate mutton with yogurt and spices. Sauté onions, garlic, and ginger, then add marinated mutton and cook until tender
               </p>
               <br />
-              <button className="btn btn-warning">Order Now!</button>
+              <Link to={'/all-products'}><button className="btn btn-warning">Show All items</button></Link>
             </div>
           </div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">

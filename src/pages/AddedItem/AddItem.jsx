@@ -63,6 +63,7 @@ const AddItem = () => {
             <div>
               <span className="label-text">Name</span>
               <input
+              required
                 type="text"
                 placeholder="Type here"
                 name="name"
@@ -94,6 +95,7 @@ const AddItem = () => {
             <div>
               <span className="label-text">Image Url</span>
               <input
+              required
                 type="text"
                 placeholder="Type here"
                 name="image"
@@ -103,6 +105,7 @@ const AddItem = () => {
             <div>
               <span className="label-text">Origin</span>
               <input
+              required
                 type="text"
                 placeholder="Type here"
                 name="origin"
@@ -112,6 +115,7 @@ const AddItem = () => {
             <div>
               <span className="label-text">Price</span>
               <input
+              required
                 type="text"
                 placeholder="Type here"
                 name="price"
@@ -121,6 +125,7 @@ const AddItem = () => {
             <div>
               <span className="label-text">Quantity</span>
               <input
+              required
                 type="text"
                 placeholder="Type here"
                 name="quantity"
@@ -130,6 +135,7 @@ const AddItem = () => {
             <div>
               <span className="label-text">Category</span>
               <input
+              required
                 type="text"
                 placeholder="Type here"
                 name="category"
@@ -139,8 +145,9 @@ const AddItem = () => {
           </div>
           <br />
           <div>
-            <span className="label-text">Short details</span>
+            <span className="label-text">Reciepe</span>
             <input
+
               type="text"
               name="short_details"
               placeholder="Type here"

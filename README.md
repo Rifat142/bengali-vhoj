@@ -1,8 +1,8 @@
-# React + Vite
+My project name is Bengali Vhoj
+live link = https://bengali-vhoj.web.app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* if u hover on the profile picture it will show you 3 your cart , add a item , your added item
+* after login in nabvar u can see your profile pic
+* have a bg on the whole website , different in many components 
+* swal alert implemented
+* Glass type card 
