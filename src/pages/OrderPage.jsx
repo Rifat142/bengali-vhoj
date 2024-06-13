@@ -73,7 +73,7 @@ const OrderPage = () => {
     
     // sending to server side 
 
-    fetch("http://localhost:5000/food-cart", {
+    fetch("https://bengali-vhoj-server.vercel.app/food-cart", {
       method: "POST",
       headers: {
         "content-type": "application/json",

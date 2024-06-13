@@ -56,19 +56,19 @@ const router = createBrowserRouter([
       {
         path: "/food-details/:id",
         element: <PrivateRoutes> <FoodDetails></FoodDetails></PrivateRoutes>,
-        loader: ({params}) => fetch(`http://localhost:5000/foods/${params.id}`)
+        loader: ({params}) => fetch(`https://bengali-vhoj-server.vercel.app/foods/${params.id}`)
        
       },
       {
         path:'/all-products',
         element: <AllProducts></AllProducts>,
-        loader:()=>fetch(`http://localhost:5000/foods`)
+        loader:()=>fetch(`https://bengali-vhoj-server.vercel.app/foods`)
         
       },
       {
         path:'/order-page/:id',
         element:<PrivateRoutes><OrderPage></OrderPage></PrivateRoutes>,
-        loader: ({params}) => fetch(`http://localhost:5000/foods/${params.id}`)
+        loader: ({params}) => fetch(`https://bengali-vhoj-server.vercel.app/foods/${params.id}`)
       },
       {
         path : '/cart',
@@ -85,7 +85,7 @@ const router = createBrowserRouter([
       {
         path:'/update/:id',
         element:<UpdateProduct></UpdateProduct>,
-        loader: ({params}) => fetch(`http://localhost:5000/foods/${params.id}`)
+        loader: ({params}) => fetch(`https://bengali-vhoj-server.vercel.app/foods/${params.id}`)
       }
 
     ],

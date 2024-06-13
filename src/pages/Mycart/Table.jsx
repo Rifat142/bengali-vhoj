@@ -19,7 +19,7 @@ const Table = ({ cart, carts, setCart }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/food-cart/${_id}`, {
+        fetch(`https://bengali-vhoj-server.vercel.app/food-cart/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

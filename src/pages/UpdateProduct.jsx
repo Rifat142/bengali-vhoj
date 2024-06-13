@@ -77,7 +77,7 @@ const UpdateProduct = () => {
       
       // sending to server side 
   
-      fetch(`http://localhost:5000/foods/${_id}`, {
+      fetch(`https://bengali-vhoj-server.vercel.app/foods/${_id}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",

@@ -27,7 +27,7 @@ const AddItem = () => {
         console.log(  'add a item', addedItem);
     
         // send to the client server;
-        fetch("http://localhost:5000/food", {
+        fetch("https://bengali-vhoj-server.vercel.app/food", {
           method: "POST",
           headers: {
             "content-type": "application/json",

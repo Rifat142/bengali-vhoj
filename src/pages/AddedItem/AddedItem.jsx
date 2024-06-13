@@ -10,7 +10,7 @@ const AddedItem = () => {
 
     const [foods ,setFoods]= useState([]);
     useEffect(()=>{
-     fetch(`http://localhost:5000/foods?email=${user.email}`)
+     fetch(`https://bengali-vhoj-server.vercel.app/foods?email=${user.email}`)
    
      .then(res=>res.json())
      .then(data=> setFoods(data))

@@ -10,7 +10,7 @@ const Cart = () => {
         // console.log( 'user enail', user.email)
     
     useEffect(()=>{
-     fetch(`http://localhost:5000/food-cart?email=${user.email}`)
+     fetch(`https://bengali-vhoj-server.vercel.app/food-cart?email=${user.email}`)
      .then(res=>res.json())
      .then(data=> setCart(data))
 
