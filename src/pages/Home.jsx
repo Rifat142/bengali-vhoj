@@ -57,6 +57,7 @@ const Home = () => {
       </div>
 
       <div data-aos="fade-up">
+        {/* <CardData></CardData> */}
         <CardData></CardData>
       </div>
       <div data-aos="fade-right">
